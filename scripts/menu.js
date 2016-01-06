@@ -9,10 +9,12 @@ $(document).ready(function () {
             $(".wrapper").animate({left: '250px'}, 300);
             $(".curtain").animate({left: '250px'}, 200);
         }
+        $("body").css("overflow-y", "hidden");
     });
     $(".curtain").click(function () {
         $("nav").removeClass("menu-shift-right");
         $(".wrapper").animate({left: '0px'}, 300);
         $(".curtain").animate({left: '100%'}, 200);
+        $("body").css("overflow-y", "visible");
     });
 });
